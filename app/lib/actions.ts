@@ -114,6 +114,8 @@ export async function deleteInvoice(id: string) {
          message: 'Database Error: Failed to Delete Invoice.'
       };
    }
+
+   redirect('/dashboard/invoices');
 };
 
 //Sign In
