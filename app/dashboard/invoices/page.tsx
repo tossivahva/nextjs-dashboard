@@ -8,7 +8,11 @@ import {Suspense} from 'react';
 import {useSearchParams} from 'next/navigation';
 import {fetchInvoicesPages} from '@/app/lib/data';
 import InvoicesTable from '@/app/ui/invoices/table';
+import {Metadata} from 'next';
 
+export const metadata: Metadata = {
+   title: 'Invoices'
+}
 export default async function Page({searchParams}: {
     searchParams?: {
         query?: string;
